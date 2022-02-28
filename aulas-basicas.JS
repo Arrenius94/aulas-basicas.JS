@@ -470,6 +470,9 @@ for(let name of allNames){
     console.log(name)
 }    
 
+let finishRepeticaoForOf = `----------------------------------------------------------`
+console.log(finishRepeticaoForOf)
+
 /* ESTRUTURA DE REPETIÇÃO - FOR IN (É PARA OBJETO)
 */
 
@@ -489,3 +492,117 @@ const estudante = {
 for(const property in estudante){
     console.log(`${property} : ${estudante[property]}`)
 }
+
+let finishEstruturaForIn = `----------------------------------------------------------`
+console.log(finishEstruturaForIn)
+/*
+
+    Funções / Functions
+
+*/
+
+const funcaoFuction = `--- FUNÇÕES / FUNCTIONS ---`
+console.log(funcaoFuction)
+
+function printingAboutCodeClub(){
+    console.log('Estou aprendendo muito com o CodeClub')
+}
+
+printingAboutCodeClub()
+printingAboutCodeClub()
+printingAboutCodeClub() // voce pode chamar a função quantas vezes você quiser!
+
+const finishFuncaoFuction = `----------------------------------------------------------`
+console.log(finishFuncaoFuction)
+
+/*
+    - Functions
+
+    Arguments and Parameters
+
+*/
+
+let argumentsParameters = `--- ARGUMENTS AND PARAMETERS ---`
+console.log(argumentsParameters)
+
+function som(num1, num2){ //number1 and number2 are my parameters (numero1 e numero2 sao meus parametos)
+    console.log(num1 + num2)
+}
+
+som(2,3) // INVOCA A FUNÇÃO // INVOKE OR CALL
+som(5,8)
+
+let finishArgumentosParameters = `-------------------------------------------`
+console.log(finishArgumentosParameters)
+
+/*
+    Return Function
+*/
+
+const returnFunction = `--- RETURN FUNCTION ---`
+console.log(returnFunction)
+
+function sum(number1, number2){ //VOID = vazio -> (quando nao coloca o return) é para imprimir fora da function o return
+    return number1 + number2
+}
+
+const number01 = 10
+const number02 = 20
+sum(5,7)
+sum(2,2)
+sum(number01, number02)
+
+console.log(`O primeiro número é ${number01}`)
+console.log(`O segundo número é ${number02}`)
+console.log(`A soma dos dois números é ${sum(number01, number02)}!`)
+
+const sam = function(numberOne, numberTwo){ //VOID = vazio -> (quando nao coloca o return) é para imprimir fora da function o return
+    return numberOne + numberTwo
+}
+
+const resultado = sam(number01, number02)
+console.log(`E a soma dos dois números é ${resultado}`)
+
+const finishReturnFunction = `------------------------------------------------`
+console.log(finishReturnFunction)
+
+/*
+
+    - Arrow Functions
+
+*/
+
+const arrowFunctions = `--- ARROW FUNCTIONS ---`
+console.log(arrowFunctions)
+
+//const ama = function(numeral1, numeral2){ 
+//     result = numeral1 + numeral2
+// }
+const ama = (numeral1, numeral2) => numeral1 + numeral2 // PROCURE USAR ARROW FUNCTIONS
+
+const numeralOne = 20
+const numeralTwo = 30
+
+console.log(`O primeiro número é ${numeralOne}`)
+console.log(`O segundo número é ${numeralTwo}`)
+
+const resultnumeral = ama(numeralOne, numeralTwo)
+console.log(`E a soma dos dois números é ${resultnumeral}`)
+
+console.log(`A soma dos dois números é ${sum(numeralOne, numeralTwo)}!`)
+
+
+const ame = (numeral1, numeral2) => { // PROCURE USAR ARROW FUNCTIONS
+    return numeral1 + numeral2
+}
+
+const numeralTe = 30
+const numeralTo = 30
+
+const resultTo = ame(numeralTe, numeralTo)
+console.log(`E a soma dos dois números é ${resultTo}`)
+
+console.log(`A soma dos dois números é ${ame(numeralTe, numeralTo)}!`)
+
+const finishArrowFunctions = `-----------------------------------------------`
+console.log(finishArrowFunctions)
